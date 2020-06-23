@@ -20,8 +20,8 @@ class User_Contact_Method {
 	
 	public function make( $methods ) {
 		if ( ! empty( $this->params ) ) {
-			foreach ($this->params as $key => $param) {
-				$methods[ $key ] = $param;
+			foreach ( $this->params as $key => $param ) {
+				$methods[ $key ] = __( $param, 'xvr_author_box' );
 			}
 		}
 		return $methods;

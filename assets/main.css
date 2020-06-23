@@ -1,0 +1,35 @@
+.xvr-author-box-bio-wrap {
+    margin: 40px 0 20px 0;
+    border: 1px solid #eee;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.xvr-author-box-bio-wrap .avatar-image {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.xvr-author-box-bio-content .author-name {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+ul.xvr-author-box-socials {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.xvr-author-box-socials li {
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 3px 10px;
+}
+
+ul.xvr-author-box-socials li a {
+    text-decoration: none;
+}

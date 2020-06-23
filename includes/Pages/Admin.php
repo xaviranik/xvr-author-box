@@ -7,6 +7,10 @@ namespace XVR\Author_Box\Pages;
 */
 class Admin
 {
+	/**
+	 * Registers admin dependencies
+	 * @return void
+	 */
 	public function register() {
 		new Author_Box;
 	}
