@@ -1,0 +1,19 @@
+{
+    "name": "xavir/author_box",
+    "description": "Saving author information and displaying under post",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Xavir",
+            "email": "xaviranik.me@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "XVR\\Author_Box\\": "./includes"
+        }
+    }
+}
