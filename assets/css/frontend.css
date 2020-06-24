@@ -33,3 +33,7 @@ ul.xvr-author-box-socials li {
 ul.xvr-author-box-socials li a {
     text-decoration: none;
 }
+
+.form-row {
+    margin-bottom: 15px;
+}
