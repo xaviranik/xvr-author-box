@@ -19,6 +19,11 @@ class Assets {
 				'version' => filemtime( XVR_AUTHOR_BOX_PATH . '/assets/js/frontend.js' ),
 				'deps'    => ''
 			],
+			XVR_AUTHOR_BOX_PLUGIN_NAME . '_contact_form_script' => [
+				'src'     => XVR_AUTHOR_BOX_ASSETS . '/js/contact-form.js',
+				'version' => filemtime( XVR_AUTHOR_BOX_PATH . '/assets/js/contact-form.js' ),
+				'deps'    => ['jquery'],
+			],
 		];
 	}
 
@@ -51,5 +56,10 @@ class Assets {
 
 		wp_enqueue_script(XVR_AUTHOR_BOX_PLUGIN_NAME . '_script');
 		wp_enqueue_style(XVR_AUTHOR_BOX_PLUGIN_NAME . '_style');
+
+		wp_localize_script( XVR_AUTHOR_BOX_PLUGIN_NAME . '_contact_form_script', 'xvrAuthorBox', [
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'error' => __( 'Something went wrong', 'xvr-author-box' ),
+		] );
 	}
 }

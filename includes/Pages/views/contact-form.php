@@ -24,8 +24,8 @@
 
             <?php wp_nonce_field( 'xvr-author-box-form' ); ?>
 
-            <input type="hidden" name="action" value="wd_academy_enquiry">
-            <input type="submit" name="send_enquiry" value="<?php esc_attr_e( 'Send Enquiry', 'xvr-author-box-form' ); ?>">
+            <input type="hidden" name="action" value="xvr_author_box_contact">
+            <input type="submit" name="send_enquiry" value="<?php esc_attr_e( 'Contact Us', 'xvr-author-box-form' ); ?>">
         </div>
 
     </form>

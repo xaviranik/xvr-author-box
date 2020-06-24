@@ -23,6 +23,7 @@ class Contact_Form {
      * @return string
      */
     public function render_shortcode( $atts, $content = '' ) {
+        wp_enqueue_script(XVR_AUTHOR_BOX_PLUGIN_NAME . '_contact_form_script');
         ob_start();
         include __DIR__ . '/views/contact-form.php';
 

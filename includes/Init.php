@@ -15,6 +15,7 @@ final class Init
 		return [
 			Base\Enqueue::class,
 			Pages\Admin::class,
+			Pages\Frontend::class,
 		];
 	}
 
